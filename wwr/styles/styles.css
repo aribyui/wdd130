@@ -417,7 +417,7 @@ main section img{
 #background-post-4{
     grid-column: 1/11;
     grid-row: 22/27;
-    background-color: white;
+    background-color: #006ba3;
 }
 
 /* *{
@@ -439,7 +439,7 @@ main section img{
 
 .post-4 p{
     font-family: var(--paragraph-font);
-    color: #123b66;
+    color: white;
     line-height: 1.5;
 }
 
