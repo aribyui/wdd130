@@ -50,7 +50,6 @@ nav a{
     color: white;
     font-family: var(--paragraph-font);
     padding: 35px;
-
 }
 
 nav a:hover{
@@ -282,8 +281,20 @@ footer, .social img{
     padding-top: 15px;
 } */
 
-/* I didn't see changes on the page with following selector */
+
 main section img{
+
+    /* Add box-sizing: border-box; to the main section img selector. 
+    Now the border and image will be included in the size of those 
+    images.
+
+    https://byui-wdd.github.io/wdd130/activities/w05-more-css.html
+
+
+    https://www.youtube.com/watch?v=Np1FuPKLb3E
+
+*/
+
     box-sizing: border-box;
 }
 
