@@ -1,0 +1,144 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sedgwick+Ave&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #202020;
+  --secondary-color: #505050;
+  --accent1-color: #39ff14;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Sedgwick Ave";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #202020;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #202020; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #505050  ;
+  --nav-link-color: white;
+  --nav-background-color: #39ff14;
+  --nav-hover-link-color: #202020;
+  --nav-hover-background-color: #2020;
+}
+
+body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+.logo{
+   width: 100px;
+   padding: 10px 10px;
+} 
+
+#title{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding-top: 20px;
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: var(--nav-background-color);
+}
+  
+.top-nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+  
+.top-nav a:hover {
+    background-color: var(--nav-hover-link-color);
+    color: white;
+}
+
+
+
+
+/* .top-nav a.active {
+    background-color: var(--primary-color);
+    color: white;
+} */
+
+
+
+/* home page main */
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#home-title{
+    grid-column: 1/11;
+    grid-row: 1/3;
+}
+
+#home-title h1{
+    font-family: var(--heading-font);
+    padding: 100px;
+    text-align: center;
+}
+
+#banner-background{
+    grid-column: 1/11;
+    grid-row: 3/8;
+    background-color: var(--paragraph-background-color);
+}
+
+.banner-message{
+    grid-column: 1/7;
+    grid-row: 3/8;
+    background-color: var(--primary-color);
+    padding: 40px;
+    margin: 80px 50px;
+    /* border-radius: 20px; */
+    box-shadow: rgb(20, 20, 20) 20px 20px 20px;
+}
+
+.banner-message h1{
+    font-family: var(--heading-font);
+    color: white;
+}
+
+.banner-message p{
+    font-family: var(--paragraph-font);
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#banner-image{
+    grid-column: 6/10;
+    grid-row: 4/7;
+    box-shadow: rgb(20, 20, 20) 20px 20px 20px;
+}
+
+
+footer{
+    margin-top: 350px;
+    background-color: var(--primary-color);
+    padding: 80px;
+}
+
+footer p{
+    font-family: var(--paragraph-font);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
