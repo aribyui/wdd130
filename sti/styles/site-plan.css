@@ -61,7 +61,9 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
-
+.image{
+  max-width: 1200px;
+}
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
@@ -100,7 +102,7 @@ p.colored {
 }
 
 nav {
-  background-color: var(--nav-background-color);
+  background-color: var(--accent1-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -118,11 +120,11 @@ nav a {
 
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: var(--nav-link-color);color: var(--primary-color);
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .sitemap {
