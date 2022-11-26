@@ -50,9 +50,12 @@ body{
     background-color: var(--primary-color);
 }
 
-#logo{
+#logo-link{
     grid-column: 1/2;
     grid-row: 1/3;
+}
+
+.logo{
     width: 120px;
     border-radius: 50%;
     border: 5px solid var(--accent1-color);
@@ -60,7 +63,7 @@ body{
 }
 
 #header-title{
-    grid-column: 2/10;
+    grid-column: 2/8;
     grid-row: 1/3;
     font-family: var(--heading-font);
     color: var(--accent1-color);
@@ -193,19 +196,30 @@ body{
 /* footer section */
 
 footer{
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 25px;
-    margin-top: 300px;
+    margin-top: 350px;
     display: flex;
-    justify-content: space-around;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    padding: 25px 50px 25px 50px;
     align-items: center;
+    /* height: 100px; */
 }
 
+
 footer p{
-    
     font-family: var(--paragraph-font);
+    color: white;   
 }
+
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
 
 
 /* services main section */
